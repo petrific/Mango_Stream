@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MangoStream": {
+      "commandName": "Project",
+      "commandLineArgs": "Insert mango1"
+    }
+  }
+}

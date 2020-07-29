@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MangoStream.Producer", "MangoStream.Producer\MangoStream.Producer.csproj", "{DFFE1D6D-01EA-4668-8680-293B92EDE4AB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MangoStream.Receiver", "MangoStream.Receiver\MangoStream.Receiver.csproj", "{BA1198CE-7913-4072-A026-0DCF570A01B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFFE1D6D-01EA-4668-8680-293B92EDE4AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFFE1D6D-01EA-4668-8680-293B92EDE4AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFFE1D6D-01EA-4668-8680-293B92EDE4AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFFE1D6D-01EA-4668-8680-293B92EDE4AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA1198CE-7913-4072-A026-0DCF570A01B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA1198CE-7913-4072-A026-0DCF570A01B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA1198CE-7913-4072-A026-0DCF570A01B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA1198CE-7913-4072-A026-0DCF570A01B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01D51CE2-8EA9-4C0F-8FFD-F4F2DB2F0882}
+	EndGlobalSection
+EndGlobal

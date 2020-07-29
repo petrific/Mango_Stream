@@ -1,0 +1,10 @@
+
+MangoStream\.Producer/bin/
+
+MangoStream\.Producer/obj/
+
+\.vs/
+
+MangoStream\.Receiver/bin/
+
+MangoStream\.Receiver/obj/
