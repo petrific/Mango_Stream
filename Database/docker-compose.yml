@@ -1,0 +1,47 @@
+version: '3'
+services:
+  mongo1:
+    build: ./mongoRS
+    # volumes:
+    # - /D/mongo:/data/db
+    ports:
+    - 30001-30003:27017-27019
+    container_name: mongo1
+    hostname: mongo1
+    networks:
+      rs_bridge:
+        ipv4_address: 172.16.238.2
+  mongo2:
+    build: ./mongoRS
+    # volumes:
+    # - /D/mongo:/data/db
+    ports:
+    - 30004-30006:27017-27019
+    container_name: mongo2
+    hostname: mongo2
+    networks:
+      rs_bridge:
+        ipv4_address: 172.16.238.3
+  mongo3:
+    build: ./mongoRS
+    # volumes:
+    # - /D/mongo:/data/db
+    ports:
+    - 30007-30009:27017-27019
+    container_name: mongo3    
+    hostname: mongo3
+    environment:
+      ROLE: main
+      MAIN: 172.16.238.4
+      SECONDARY1: 172.16.238.2
+      SECONDARY2: 172.16.238.3
+    networks:
+      rs_bridge:
+        ipv4_address: 172.16.238.4
+networks: 
+  rs_bridge:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.238.0/24
+    

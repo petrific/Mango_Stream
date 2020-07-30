@@ -1,0 +1,6 @@
+FROM mongo:4.2
+WORKDIR /usr/bin
+COPY ./start.sh .
+
+EXPOSE 27017
+CMD ["bash", "start.sh"]
